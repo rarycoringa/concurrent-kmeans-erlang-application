@@ -1,15 +1,13 @@
 {application, kmeans,
- [{description, "An OTP application"},
+ [{description, "kmeans"},
   {vsn, "0.1.0"},
   {registered, []},
-  {mod, {kmeans_app, []}},
   {applications,
    [kernel,
     stdlib
    ]},
-  {env,[]},
-  {modules, []},
-
+  {env, []},
+  {modules, [kmeans, kmeans_csv, kmeans_main]},
   {licenses, ["Apache-2.0"]},
   {links, []}
  ]}.
